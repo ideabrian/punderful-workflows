@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+#puns-container,
+.pun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.search-section {
+  position: sticky;
+  top: 0;
+  background-color: #1a1a1a;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 100;
+}
+
+#search-results {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pun-box {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pun-box:hover {
+  transform: scale(1.05);
+  background-color: #3b3b3b;
+}
+
+.pun-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.punchline {
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.pun-box:hover .punchline {
+  display: block;
+}
+
+.heart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #ff6b6b;
+  transition: transform 0.3s;
+}
+
+.heart.liked {
+  transform: scale(1.3);
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.pun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
