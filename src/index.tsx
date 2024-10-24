@@ -288,6 +288,8 @@ async function getAsset(c: Context, pathName: string) {
 	return new Response(asset.readableStream, { headers: { 'Content-Type': asset.contentType } });
 }
 
+/* Uncomment if you want to upload
+
 app.post('/api/puns/batch', async (c) => {
 	const response = await getAsset(c, '/puns.json');
 	const opuns = (await response.json()) as Array<string>;
@@ -307,7 +309,7 @@ app.post('/api/puns/batch', async (c) => {
 	}
 	return c.json({ success: true });
 });
-
+*/
 
 export default {
   fetch: app.fetch,

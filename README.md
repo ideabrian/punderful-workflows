@@ -2,11 +2,12 @@
 
 Punderful is a #BuildInPublic project that collects puns from everyone and helps them find them ones that make the chuckle.
 
-It makes use of [Cloudflare Stack](https://www.youtube.com/watch?v=FH5-m0aiO5g), but most importantly focussing on the new kid on the block [Workflows](https://developers.cloudflare.com/workflows).
+It was built with 🧡 on the [Cloudflare Stack](https://www.youtube.com/watch?v=FH5-m0aiO5g). Most importantly, this code focusses heavy on the new kid on the block [Workflows](https://developers.cloudflare.com/workflows).
 
 
 ## Learn More
 
+[<img src="https://img.youtube.com/vi/slS4RBV0SBk/0.jpg">](https://youtu.be/slS4RBV0SBk "Cloudflare Workflows: The Newest Developer Platform Primitive at Cloudflare")
 
 
 ## Setup
@@ -57,4 +58,22 @@ Copy and Paste the returned value and replace it in [wrangler.toml](./wrangler.t
 
 ### Optional: OpenAI
 
+Moderation is available using the free OpenAI the PublishWorkflow. You will need an OpenAI API Key to use it.
+
+```bash
 npx wrangler secret put OPENAI_API_KEY 
+```
+
+## Develop
+
+You can develop locally, mostly.
+
+```bash
+npm run dev
+```
+
+But you probably really should deploy it.
+
+```bash
+npm run deploy
+```

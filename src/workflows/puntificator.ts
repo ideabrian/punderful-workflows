@@ -22,13 +22,14 @@ export class PuntificatorWorkflow extends WorkflowEntrypoint<Env, PuntificatorPa
 
 				You should attempt to understand why they are popular, and you then build a new pun that is similar in style conceptually.
 
-				Use the trending puns for your inspiration.
+				Use the trending puns for your inspiration, but create original puns.
 
 				If your pun has a punchline, ensure to put in two newlines between the intro and the punchline (like the examples)
 
 				${punsOnly.join('\n\n')}
 
 				Return only the pun. Do not include an intro or explanation, only a single pun. Do not include the surrounding XML, only return a single pun.
+				Return only one pun, please, not multiple.
 				`,
 			});
             // @ts-ignore   
@@ -75,6 +76,10 @@ export class PuntificatorWorkflow extends WorkflowEntrypoint<Env, PuntificatorPa
 						},
 					},
 				],
+			}, {
+				gateway: {
+					id: "punderful"
+				}
 			});
             // @ts-ignore
 			if (result.tool_calls === undefined) {
