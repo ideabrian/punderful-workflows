@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+import { Hono, Context } from "hono";
 import { getCookie, setCookie } from "hono/cookie";
 import { jsxRenderer } from "hono/jsx-renderer";
 

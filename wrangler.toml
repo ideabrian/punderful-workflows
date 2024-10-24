@@ -58,7 +58,7 @@ binding = "AI"
 [[vectorize]]
 binding = "VECTORIZE"
 # TODO: punderful
-index_name = "punderful-temp"
+index_name = "punderful"
 
 [[kv_namespaces]]
 binding = "LEADERBOARD"
