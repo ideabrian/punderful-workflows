@@ -1,8 +1,8 @@
 # Punderful
 
-Punderful is a #BuildInPublic project that collects puns from everyone and helps them find them ones that make the chuckle.
+Punderful is a #BuildInPublic project that collects puns from anyone and helps them find ones that make them chuckle.
 
-It was built with 🧡 on the [Cloudflare Stack](https://www.youtube.com/watch?v=FH5-m0aiO5g). Most importantly, this code focusses heavy on the new kid on the block [Workflows](https://developers.cloudflare.com/workflows).
+It is built with 🧡 on the [Cloudflare Stack](https://www.youtube.com/watch?v=FH5-m0aiO5g). Most importantly, this code focusses heavily on the new kid on the block [Workflows](https://developers.cloudflare.com/workflows).
 
 
 ## Learn More
@@ -38,7 +38,7 @@ npx wrangler d1 migrations apply punderful --remote
 
 ### Vectorize
 
-Create the index with the settings of embedding model we are going to use
+Create the index with the settings of the embedding model we are going to use
 
 ```bash
 npx wrangler@beta vectorize create punderful --preset "@cf/baai/bge-large-en-v1.5"
@@ -54,7 +54,7 @@ Create the namespace
 npx wrangler@workflows kv namespace create LEADERBOARD
 ```
 
-Copy and Paste the returned value and replace it in [wrangler.toml](./wrangler.toml)
+Copy and Paste the returned value into [wrangler.toml](./wrangler.toml)
 
 ### Optional: OpenAI
 
@@ -72,7 +72,7 @@ You can develop locally, mostly.
 npm run dev
 ```
 
-But you probably really should deploy it.
+But you should really deploy it (probably).
 
 ```bash
 npm run deploy
